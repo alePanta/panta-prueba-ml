@@ -1,0 +1,19 @@
+<div class="cont-searc-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col cont-searc-bar__row">
+                <div class="cont-searc-bar__btn-search" (click)="fireInputSearch()">
+                    <picture>
+                        <source srcset="assets/ic_Search.png, assets/ic_Search@2x.png.png.png 2x">
+                        <img class="icon-btn" srcset="assets/ic_Search.png, assets/ic_Search@2x.png.png.png 2x" alt="Buscador">
+                    </picture>
+                </div>
+                <picture>
+                    <source srcset="assets/Logo_ML.png, assets/Logo_ML@2x.png.png.png 2x">
+                    <img class="cont-searc-bar__logo" srcset="assets/Logo_ML.png, assets/Logo_ML@2x.png.png.png 2x" alt="Mercado Libre" (click)="onLogo()">
+                </picture>
+                <input class="cont-searc-bar__input"type="text" [(ngModel)]="valuSeachTrim" (keyup.enter)="fireInputSearch()">
+            </div>
+        </div>
+    </div>
+</div>

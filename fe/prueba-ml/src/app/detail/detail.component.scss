@@ -1,0 +1,64 @@
+@import '~src/styles';
+
+.cont-detail {
+    background-color: $white;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    
+    &__col {
+        padding: 32px;
+
+        .main-image {
+            width: 100%;
+        }
+
+        .condition {
+            font-size: 14px;
+            color: $gray1;
+            margin-bottom: 0px;
+        }
+
+        .title {
+            font-size: 24px;
+            color: $gray1;
+            font-weight: 600;
+        }
+       
+        .amount {
+            font-size: 46px;
+            color: $gray1;
+            margin-top: 10px;
+            margin-bottom: 12px;
+        }
+
+        .btn-comprar {
+            background-color: $blue;
+            border-radius: 4px;
+            color: $white;
+            padding: 13px 0;
+            font-size: 20px;
+            border: none;
+            width: 100%;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+        .desc-ttl {
+            font-size: 28px;
+            margin-bottom: 11px;
+            margin-top: 20px;
+            color: $gray1;
+        }
+
+        .desc-detail {
+            font-size: 16px;
+            color: $gray3;
+            margin: 0;
+        }
+        
+        
+    }
+
+}

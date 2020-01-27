@@ -1,0 +1,59 @@
+@import '~src/styles';
+
+.cont-searc-bar {
+    height: 56px;
+    width: 100%;
+    background-color: $yellow;
+    padding-top: 10px;
+    
+    &__row {
+        padding: 0;
+    }
+
+    &__btn-search {
+        height: 35px;
+        width: 35px;
+        background-color: $gray4;
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        border-radius: 0 4px 4px 0;
+
+        .icon-btn {
+            position: absolute;
+            top: 9px;
+            right: 7px;
+            width: 18px;
+            height: 18px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__logo {
+        width: 53px;
+        height: 36px;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__input {
+        border-radius: 4px;
+        border: none;
+        font-size: 18px;
+        float: right;
+        padding: 4px 53px 4px 13px;
+        width: 91%;
+        max-height: 35px;
+        color: $gray1;
+
+        // La barra de búsqueda se ajusta al 85% de los 768px para abajo
+        @media (max-width: 768px) {  
+            width: 85%;
+        }
+    }
+}

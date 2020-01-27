@@ -1,0 +1,23 @@
+<div class="container cont-result">
+    <div class="row" *ngFor="let item of resultSearch?.items">
+        <div class="col cont-result__col">
+            <a class="cont-ima" [routerLink]="['/items',item.id]">
+                <img class="image" [src]="item.picture" alt="item.title">
+            </a>
+            <p class="price">$ {{item.price.amount}}
+                <span class="icon-shipping" *ngIf="item.free_shipping">
+                    <picture>
+                        <source srcset="assets/ic_shipping.png, assets/ic_shipping@2x.png.png.png 2x">
+                        <img class="icon" srcset="assets/ic_shipping.png, assets/ic_shipping@2x.png.png.png 2x" alt="Free shipping icon">
+                    </picture>
+                </span>
+            </p>
+
+            <p class="locality">Capital Federal</p>
+
+            <a class="title" [routerLink]="['/items',item.id]">{{item.title}}</a>
+        </div>
+        <hr class="separator">
+    </div>
+</div>
+

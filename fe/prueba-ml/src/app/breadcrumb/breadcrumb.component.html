@@ -1,0 +1,11 @@
+<div class="cont-breadcrum">
+    <div class="container">
+        <div class="row">
+            <div class="col cont-breadcrum__col">
+                <ul class="cont-breadcrum__list">
+                    <li class="item-category" *ngFor="let category of categories, let ind = index"><span class="separator"*ngIf="ind">&rsaquo;</span>{{category}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

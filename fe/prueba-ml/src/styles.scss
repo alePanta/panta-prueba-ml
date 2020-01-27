@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Colores
+$yellow: #FFE600;
+$gray1: #333333;
+$gray2: #666666;
+$gray3: #999999;
+$gray4: #EEEEEE;
+$white: #ffffff;
+$blue: #3483FA;
+
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+    background-color: $gray4 !important;
+}
+
+@media only screen and (min-width : 1200px) {
+    .container { max-width: 980px; }
+}

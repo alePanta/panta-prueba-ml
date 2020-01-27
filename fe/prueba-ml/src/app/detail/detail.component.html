@@ -1,0 +1,19 @@
+<div *ngIf="showDetail" class="container cont-detail">
+    <div class="row">
+        <div class="col-sm-8 cont-detail__col">
+            <img class="main-image" [src]="resultProductDetail?.items.picture" [alt]="resultProductDetail?.items.title">
+        </div>
+
+        <div class="col-sm-4 cont-detail__col">
+            <p class="condition">{{resultProductDetail?.items.condition}} - {{resultProductDetail?.items.sold_quantity}} vendidos</p>
+            <h1 class="title">{{resultProductDetail?.items.title}}</h1>
+            <p class="amount">$ {{resultProductDetail?.items.price.amount}}</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="col-sm-12 cont-detail__col">
+            <p class="desc-ttl">Descripción del producto</p>
+            <p class="desc-detail">{{resultProductDetail?.items.description}}</p>
+        </div>
+    </div>
+</div>
